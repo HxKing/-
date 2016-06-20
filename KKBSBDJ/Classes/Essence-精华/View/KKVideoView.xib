@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KKVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="197"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Qo0-ro-90V">
+                    <rect key="frame" x="0.0" y="20" width="362" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="nr6-um-7bg"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pxJ-FT-3AX">
+                    <rect key="frame" x="0.0" y="0.0" width="362" height="197"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-un-gsm">
+                    <rect key="frame" x="145" y="63" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="Lfk-sp-YqO"/>
+                        <constraint firstAttribute="width" constant="71" id="QUA-yf-Fru"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="video-play"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-q8-xW8" userLabel="视频时长">
+                    <rect key="frame" x="326" y="179" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy1-Si-hfr" userLabel="播放次数">
+                    <rect key="frame" x="0.0" y="180" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="M9u-un-gsm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0xN-wH-dJ8"/>
+                <constraint firstItem="Qo0-ro-90V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="A5q-PE-kQt"/>
+                <constraint firstAttribute="trailing" secondItem="Qo0-ro-90V" secondAttribute="trailing" id="DzZ-W0-RMA"/>
+                <constraint firstItem="M9u-un-gsm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ewv-Qu-NHe"/>
+                <constraint firstAttribute="bottom" secondItem="Iy1-Si-hfr" secondAttribute="bottom" id="ID7-tj-SRn"/>
+                <constraint firstItem="Qo0-ro-90V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NsP-d6-Pf8"/>
+                <constraint firstAttribute="bottom" secondItem="VYB-q8-xW8" secondAttribute="bottom" id="ix3-hA-9I4"/>
+                <constraint firstAttribute="bottom" secondItem="pxJ-FT-3AX" secondAttribute="bottom" id="jOK-ek-h8G"/>
+                <constraint firstItem="pxJ-FT-3AX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="n62-tg-fLW"/>
+                <constraint firstAttribute="trailing" secondItem="pxJ-FT-3AX" secondAttribute="trailing" id="rVp-Zp-HPd"/>
+                <constraint firstAttribute="trailing" secondItem="VYB-q8-xW8" secondAttribute="trailing" id="sRt-pe-qtx"/>
+                <constraint firstItem="Iy1-Si-hfr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="w5T-9d-wDM"/>
+                <constraint firstItem="pxJ-FT-3AX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yvp-TU-sKq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="videoImg" destination="pxJ-FT-3AX" id="ojY-IC-w17"/>
+                <outlet property="videoNumber" destination="Iy1-Si-hfr" id="ufz-VI-CBO"/>
+                <outlet property="videoTime" destination="VYB-q8-xW8" id="fI0-jn-9hr"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="182.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

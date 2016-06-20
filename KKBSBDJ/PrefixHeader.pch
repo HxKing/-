@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  KKBSBDJ
+//
+//  Created by 王亚康 on 16/2/21.
+//  Copyright © 2016年 王亚康. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "KKConst.h"
+#import "UIImage+KKExtension.h"
+#import "UIImageView+Extension.h"
+
+#ifdef DEBUG
+#define KKLog(...) NSLog(__VA_ARGS__)
+#else
+#define KKLog(...)
+#endif
+
+#define KKFunc KKLog(@"%s",__func__)
+
+//#define KKRanumd 
+#define KKRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define KKGlobalBg KKRGBColor(223, 223, 223)
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#endif /* PrefixHeader_pch */

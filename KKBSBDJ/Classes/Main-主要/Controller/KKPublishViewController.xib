@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKPublishViewController">
+            <connections>
+                <outlet property="cancalClick" destination="NZl-tH-hsO" id="Wyh-zE-3S3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="R7l-Ci-GSE">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZl-tH-hsO">
+                    <rect key="frame" x="155.5" y="540" width="289" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="108-8V-tut"/>
+                        <constraint firstAttribute="width" constant="289" id="EQj-gU-afR"/>
+                    </constraints>
+                    <state key="normal" title="取消" backgroundImage="shareButtonCancel"/>
+                    <connections>
+                        <action selector="concleBtn:" destination="-1" eventType="touchUpInside" id="s06-1K-5dX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R7l-Ci-GSE" secondAttribute="trailing" id="C7V-mI-35O"/>
+                <constraint firstAttribute="bottom" secondItem="NZl-tH-hsO" secondAttribute="bottom" constant="20" id="GwM-95-Kfg"/>
+                <constraint firstItem="NZl-tH-hsO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WEd-jh-vEc"/>
+                <constraint firstAttribute="bottom" secondItem="R7l-Ci-GSE" secondAttribute="bottom" id="YaC-rd-cSV"/>
+                <constraint firstItem="R7l-Ci-GSE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="plf-oi-L90"/>
+                <constraint firstItem="R7l-Ci-GSE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="twv-qw-Vf9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+    </resources>
+</document>
