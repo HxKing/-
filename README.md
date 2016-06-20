@@ -7,7 +7,7 @@
 下一步，该怎么做...
 
 #项目展示
-![](/Users/wangyakang/Desktop/Untitled.gif)
+![](/Users/wangyakang/Desktop/Untitled2.gif)
 
 
 #项目已完成功能
