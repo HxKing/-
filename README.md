@@ -12,10 +12,6 @@
 - 关注
 - 登录 注册 （页面搭建）
 
-#项目未完成功能 
-- 我的 页面
-- 发帖
-- 还有好多
  
 #项目涉及知识
 - SDWebImage、AFNetworking、SVProgressHUD、MJExtension、MJRefresh第三方框架的使用
